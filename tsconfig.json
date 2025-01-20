@@ -6,8 +6,6 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
@@ -16,23 +14,15 @@
         "projects/ngx-piwik-pro/*",
         "projects/ngx-piwik-pro"
       ],
-      "@piwik-pro/ngx-piwik-pro": [
-        "dist/ngx-piwik-pro/*",
-        "dist/ngx-piwik-pro"
-      ]
+      "@piwik-pro/ngx-piwik-pro": ["dist/ngx-piwik-pro/*", "dist/ngx-piwik-pro"]
     },
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "ES2022",
-    "module": "es2020",
-    "lib": [
-      "es2020",
-      "dom"
-    ],
-    "useDefineForClassFields": false
+    "module": "esnext",
+    "lib": ["es2018", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

@@ -1,12 +1,10 @@
-
 <a name="readmemd"></a>
-
-
-
 
 # Piwik PRO Library for Angular
 
 Dedicated Piwik PRO library that helps with implementing Piwik PRO Tag Manager and the Piwik PRO tracking client in Angular 8+ applications.
+
+This fork is aiming at angular 8.
 
 - [Installation](#installation)
   - [NPM](#npm)
@@ -208,12 +206,9 @@ export class TestPageComponent implements OnInit {
 }
 ```
 
-
 <a name="globalsmd"></a>
 
-
-***
-
+---
 
 ### Namespaces
 
@@ -245,26 +240,18 @@ export class TestPageComponent implements OnInit {
 
 - [default](#variablesdefaultmd)
 
-
 <a name="namespacesclientconfigurationreadmemd"></a>
 
-
-***
-
+---
 
 ## ClientConfiguration
-
-
 
 - [getDomains](#namespacesclientconfigurationfunctionsgetdomainsmd)
 - [setDomains](#namespacesclientconfigurationfunctionssetdomainsmd)
 
-
 <a name="namespacesclientconfigurationfunctionsgetdomainsmd"></a>
 
-
-***
-
+---
 
 ## getDomains()
 
@@ -276,12 +263,9 @@ Returns list of internal domains (set with "setDomains" function and used in out
 
 `Promise`\<`string`[]\>
 
-
 <a name="namespacesclientconfigurationfunctionssetdomainsmd"></a>
 
-
-***
-
+---
 
 ## setDomains()
 
@@ -297,16 +281,11 @@ Allows to define a list of internal domains or mobile app URIs. Used in outlink 
 
 `void`
 
-
 <a name="namespacescontenttrackingreadmemd"></a>
 
-
-***
-
+---
 
 ## ContentTracking
-
-
 
 - [logAllContentBlocksOnPage](#namespacescontenttrackingfunctionslogallcontentblocksonpagemd)
 - [trackAllContentImpressions](#namespacescontenttrackingfunctionstrackallcontentimpressionsmd)
@@ -316,12 +295,9 @@ Allows to define a list of internal domains or mobile app URIs. Used in outlink 
 - [trackContentInteractionNode](#namespacescontenttrackingfunctionstrackcontentinteractionnodemd)
 - [trackVisibleContentImpressions](#namespacescontenttrackingfunctionstrackvisiblecontentimpressionsmd)
 
-
 <a name="namespacescontenttrackingfunctionslogallcontentblocksonpagemd"></a>
 
-
-***
-
+---
 
 ## logAllContentBlocksOnPage()
 
@@ -333,12 +309,9 @@ Print all content blocks to the console for debugging purposes
 
 `void`
 
-
 <a name="namespacescontenttrackingfunctionstrackallcontentimpressionsmd"></a>
 
-
-***
-
+---
 
 ## trackAllContentImpressions()
 
@@ -352,12 +325,9 @@ trackPageView was called in between trackAllContentImpressions invocations
 
 `void`
 
-
 <a name="namespacescontenttrackingfunctionstrackcontentimpressionmd"></a>
 
-
-***
-
+---
 
 ## trackContentImpression()
 
@@ -375,12 +345,9 @@ trackPageView was called in between trackAllContentImpressions invocations
 
 `void`
 
-
 <a name="namespacescontenttrackingfunctionstrackcontentimpressionswithinnodemd"></a>
 
-
-***
-
+---
 
 ## trackContentImpressionsWithinNode()
 
@@ -394,12 +361,9 @@ trackPageView was called in between trackAllContentImpressions invocations
 
 `void`
 
-
 <a name="namespacescontenttrackingfunctionstrackcontentinteractionmd"></a>
 
-
-***
-
+---
 
 ## trackContentInteraction()
 
@@ -429,12 +393,9 @@ Where the content leads to (e.g. URL of some external website)
 
 `void`
 
-
 <a name="namespacescontenttrackingfunctionstrackcontentinteractionnodemd"></a>
 
-
-***
-
+---
 
 ## trackContentInteractionNode()
 
@@ -456,12 +417,9 @@ Name of interaction (e.g. "click")
 
 `void`
 
-
 <a name="namespacescontenttrackingfunctionstrackvisiblecontentimpressionsmd"></a>
 
-
-***
-
+---
 
 ## trackVisibleContentImpressions()
 
@@ -483,16 +441,11 @@ Delay, in milliseconds, between scans for new visible content. Periodic checks c
 
 `void`
 
-
 <a name="namespacescookiemanagementreadmemd"></a>
 
-
-***
-
+---
 
 ## CookieManagement
-
-
 
 - [deleteCookies](#namespacescookiemanagementfunctionsdeletecookiesmd)
 - [disableCookies](#namespacescookiemanagementfunctionsdisablecookiesmd)
@@ -511,12 +464,9 @@ Delay, in milliseconds, between scans for new visible content. Periodic checks c
 - [setVisitorCookieTimeout](#namespacescookiemanagementfunctionssetvisitorcookietimeoutmd)
 - [setVisitorIdCookie](#namespacescookiemanagementfunctionssetvisitoridcookiemd)
 
-
 <a name="namespacescookiemanagementfunctionsdeletecookiesmd"></a>
 
-
-***
-
+---
 
 ## deleteCookies()
 
@@ -528,12 +478,9 @@ Deletes existing tracking cookies on the next page view
 
 `void`
 
-
 <a name="namespacescookiemanagementfunctionsdisablecookiesmd"></a>
 
-
-***
-
+---
 
 ## disableCookies()
 
@@ -545,12 +492,9 @@ Disables all first party cookies. Existing cookies will be deleted in the next p
 
 `void`
 
-
 <a name="namespacescookiemanagementfunctionsenablecookiesmd"></a>
 
-
-***
-
+---
 
 ## enableCookies()
 
@@ -562,12 +506,9 @@ Enables all first party cookies. Cookies will be created on the next tracking re
 
 `void`
 
-
 <a name="namespacescookiemanagementfunctionsgetconfigvisitorcookietimeoutmd"></a>
 
-
-***
-
+---
 
 ## getConfigVisitorCookieTimeout()
 
@@ -579,12 +520,9 @@ Returns expiration time of visitor cookies (in milliseconds)
 
 `Promise`\<`number`\>
 
-
 <a name="namespacescookiemanagementfunctionsgetcookiedomainmd"></a>
 
-
-***
-
+---
 
 ## getCookieDomain()
 
@@ -596,12 +534,9 @@ Returns domain of the analytics tracking cookies (set with setCookieDomain()).
 
 `Promise`\<`string`\>
 
-
 <a name="namespacescookiemanagementfunctionsgetcookiepathmd"></a>
 
-
-***
-
+---
 
 ## getCookiePath()
 
@@ -613,12 +548,9 @@ Returns the analytics tracking cookies path
 
 `Promise`\<`string`\>
 
-
 <a name="namespacescookiemanagementfunctionsgetsessioncookietimeoutmd"></a>
 
-
-***
-
+---
 
 ## getSessionCookieTimeout()
 
@@ -630,12 +562,9 @@ Returns expiration time of session cookies
 
 `Promise`\<`number`\>
 
-
 <a name="namespacescookiemanagementfunctionshascookiesmd"></a>
 
-
-***
-
+---
 
 ## hasCookies()
 
@@ -647,12 +576,9 @@ Returns true if cookies are enabled in this browser
 
 `Promise`\<`boolean`\>
 
-
 <a name="namespacescookiemanagementfunctionssetcookiedomainmd"></a>
 
-
-***
-
+---
 
 ## setCookieDomain()
 
@@ -668,12 +594,9 @@ Sets the domain for the analytics tracking cookies
 
 `void`
 
-
 <a name="namespacescookiemanagementfunctionssetcookienameprefixmd"></a>
 
-
-***
-
+---
 
 ## setCookieNamePrefix()
 
@@ -689,12 +612,9 @@ Sets the prefix for analytics tracking cookies. Default is "_pk_".
 
 `void`
 
-
 <a name="namespacescookiemanagementfunctionssetcookiepathmd"></a>
 
-
-***
-
+---
 
 ## setCookiePath()
 
@@ -710,12 +630,9 @@ Sets the analytics tracking cookies path
 
 `void`
 
-
 <a name="namespacescookiemanagementfunctionssetreferralcookietimeoutmd"></a>
 
-
-***
-
+---
 
 ## setReferralCookieTimeout()
 
@@ -731,12 +648,9 @@ Sets the expiration time of referral cookies
 
 `void`
 
-
 <a name="namespacescookiemanagementfunctionssetsecurecookiemd"></a>
 
-
-***
-
+---
 
 ## setSecureCookie()
 
@@ -752,12 +666,9 @@ Toggles the secure cookie flag on all first party cookies (if you are using HTTP
 
 `void`
 
-
 <a name="namespacescookiemanagementfunctionssetsessioncookietimeoutmd"></a>
 
-
-***
-
+---
 
 ## setSessionCookieTimeout()
 
@@ -773,12 +684,9 @@ Sets the expiration time of session cookies
 
 `void`
 
-
 <a name="namespacescookiemanagementfunctionssetvisitorcookietimeoutmd"></a>
 
-
-***
-
+---
 
 ## setVisitorCookieTimeout()
 
@@ -794,12 +702,9 @@ Sets the expiration time of visitor cookies
 
 `void`
 
-
 <a name="namespacescookiemanagementfunctionssetvisitoridcookiemd"></a>
 
-
-***
-
+---
 
 ## setVisitorIdCookie()
 
@@ -811,21 +716,16 @@ Sets cookie containing [analytics ID](https://developers.piwik.pro/en/latest/glo
 
 `void`
 
-
 <a name="namespacescrossdomaintrackingreadmemd"></a>
 
-
-***
-
+---
 
 ## CrossDomainTracking
-
 
 #### Type Aliases
 
 - [LinkDecorator](#namespacescrossdomaintrackingtype-aliaseslinkdecoratormd)
 - [VisitorIdGetter](#namespacescrossdomaintrackingtype-aliasesvisitoridgettermd)
-
 
 - [customCrossDomainLinkDecorator](#namespacescrossdomaintrackingfunctionscustomcrossdomainlinkdecoratormd)
 - [customCrossDomainLinkVisitorIdGetter](#namespacescrossdomaintrackingfunctionscustomcrossdomainlinkvisitoridgettermd)
@@ -835,12 +735,9 @@ Sets cookie containing [analytics ID](https://developers.piwik.pro/en/latest/glo
 - [isCrossDomainLinkingEnabled](#namespacescrossdomaintrackingfunctionsiscrossdomainlinkingenabledmd)
 - [setCrossDomainLinkingTimeout](#namespacescrossdomaintrackingfunctionssetcrossdomainlinkingtimeoutmd)
 
-
 <a name="namespacescrossdomaintrackingfunctionscustomcrossdomainlinkdecoratormd"></a>
 
-
-***
-
+---
 
 ## customCrossDomainLinkDecorator()
 
@@ -856,12 +753,9 @@ Sets custom cross domains URL decorator for injecting visitor ID into URLs. Used
 
 `void`
 
-
 <a name="namespacescrossdomaintrackingfunctionscustomcrossdomainlinkvisitoridgettermd"></a>
 
-
-***
-
+---
 
 ## customCrossDomainLinkVisitorIdGetter()
 
@@ -877,12 +771,9 @@ Sets custom cross domain URL parser for extracting visitor ID from URLs. Should 
 
 `void`
 
-
 <a name="namespacescrossdomaintrackingfunctionsdisablecrossdomainlinkingmd"></a>
 
-
-***
-
+---
 
 ## disableCrossDomainLinking()
 
@@ -894,12 +785,9 @@ Disables cross domain linking.
 
 `void`
 
-
 <a name="namespacescrossdomaintrackingfunctionsenablecrossdomainlinkingmd"></a>
 
-
-***
-
+---
 
 ## enableCrossDomainLinking()
 
@@ -911,12 +799,9 @@ Enables cross domain linking. Visitors across domains configured with "setDomain
 
 `void`
 
-
 <a name="namespacescrossdomaintrackingfunctionsgetcrossdomainlinkingurlparametermd"></a>
 
-
-***
-
+---
 
 ## getCrossDomainLinkingUrlParameter()
 
@@ -928,12 +813,9 @@ Returns the name of a cross domain URL parameter (query parameter by default) ho
 
 `Promise`\<`string`\>
 
-
 <a name="namespacescrossdomaintrackingfunctionsiscrossdomainlinkingenabledmd"></a>
 
-
-***
-
+---
 
 ## isCrossDomainLinkingEnabled()
 
@@ -945,12 +827,9 @@ Returns boolean telling whether cross domain linking is enabled.
 
 `Promise`\<`boolean`\>
 
-
 <a name="namespacescrossdomaintrackingfunctionssetcrossdomainlinkingtimeoutmd"></a>
 
-
-***
-
+---
 
 ## setCrossDomainLinkingTimeout()
 
@@ -966,12 +845,9 @@ Changes the time in which two visits across domains will be linked. The default 
 
 `void`
 
-
 <a name="namespacescrossdomaintrackingtype-aliaseslinkdecoratormd"></a>
 
-
-***
-
+---
 
 ## Type Alias: LinkDecorator()
 
@@ -989,12 +865,9 @@ Changes the time in which two visits across domains will be linked. The default 
 
 `string` \| `null`
 
-
 <a name="namespacescrossdomaintrackingtype-aliasesvisitoridgettermd"></a>
 
-
-***
-
+---
 
 ## Type Alias: VisitorIdGetter()
 
@@ -1010,27 +883,19 @@ Changes the time in which two visits across domains will be linked. The default 
 
 `string`
 
-
 <a name="namespacescustomdimensionsreadmemd"></a>
 
-
-***
-
+---
 
 ## CustomDimensions
-
-
 
 - [deleteCustomDimension](#namespacescustomdimensionsfunctionsdeletecustomdimensionmd)
 - [getCustomDimensionValue](#namespacescustomdimensionsfunctionsgetcustomdimensionvaluemd)
 - [setCustomDimensionValue](#namespacescustomdimensionsfunctionssetcustomdimensionvaluemd)
 
-
 <a name="namespacescustomdimensionsfunctionsdeletecustomdimensionmd"></a>
 
-
-***
-
+---
 
 ## deleteCustomDimension()
 
@@ -1046,12 +911,9 @@ Removes a custom dimension with the specified ID.
 
 `void`
 
-
 <a name="namespacescustomdimensionsfunctionsgetcustomdimensionvaluemd"></a>
 
-
-***
-
+---
 
 ## getCustomDimensionValue()
 
@@ -1067,12 +929,9 @@ Returns the value of a custom dimension with the specified ID.
 
 `Promise`\<`string` \| `undefined`\>
 
-
 <a name="namespacescustomdimensionsfunctionssetcustomdimensionvaluemd"></a>
 
-
-***
-
+---
 
 ## setCustomDimensionValue()
 
@@ -1090,25 +949,17 @@ Sets a custom dimension value to be used later.
 
 `void`
 
-
 <a name="namespacescustomeventreadmemd"></a>
 
-
-***
-
+---
 
 ## CustomEvent
 
-
-
 - [trackEvent](#namespacescustomeventfunctionstrackeventmd)
-
 
 <a name="namespacescustomeventfunctionstrackeventmd"></a>
 
-
-***
-
+---
 
 ## trackEvent()
 
@@ -1132,30 +983,22 @@ Tracks a custom event, e.g. when a visitor interacts with the page
 
 `void`
 
-
 <a name="namespacesdatalayerreadmemd"></a>
 
-
-***
-
+---
 
 ## DataLayer
-
 
 #### Type Aliases
 
 - [DataLayerEntry](#namespacesdatalayertype-aliasesdatalayerentrymd)
 
-
 - [push](#namespacesdatalayerfunctionspushmd)
 - [setDataLayerName](#namespacesdatalayerfunctionssetdatalayernamemd)
 
-
 <a name="namespacesdatalayerfunctionspushmd"></a>
 
-
-***
-
+---
 
 ## push()
 
@@ -1171,12 +1014,9 @@ Adds entry to a data layer
 
 `number`
 
-
 <a name="namespacesdatalayerfunctionssetdatalayernamemd"></a>
 
-
-***
-
+---
 
 ## setDataLayerName()
 
@@ -1190,27 +1030,19 @@ Adds entry to a data layer
 
 `void`
 
-
 <a name="namespacesdatalayertype-aliasesdatalayerentrymd"></a>
 
-
-***
-
+---
 
 ## Type Alias: DataLayerEntry
 
 > **DataLayerEntry**: `Record`\<`string`, `AnyData`\>
 
-
 <a name="namespacesdownloadandoutlinkreadmemd"></a>
 
-
-***
-
+---
 
 ## DownloadAndOutlink
-
-
 
 - [addDownloadExtensions](#namespacesdownloadandoutlinkfunctionsadddownloadextensionsmd)
 - [enableLinkTracking](#namespacesdownloadandoutlinkfunctionsenablelinktrackingmd)
@@ -1223,12 +1055,9 @@ Adds entry to a data layer
 - [setLinkTrackingTimer](#namespacesdownloadandoutlinkfunctionssetlinktrackingtimermd)
 - [trackLink](#namespacesdownloadandoutlinkfunctionstracklinkmd)
 
-
 <a name="namespacesdownloadandoutlinkfunctionsadddownloadextensionsmd"></a>
 
-
-***
-
+---
 
 ## addDownloadExtensions()
 
@@ -1244,12 +1073,9 @@ Adds new extensions to the download extensions list
 
 `void`
 
-
 <a name="namespacesdownloadandoutlinkfunctionsenablelinktrackingmd"></a>
 
-
-***
-
+---
 
 ## enableLinkTracking()
 
@@ -1268,12 +1094,9 @@ to a downloadable file creates a download event
 
 `void`
 
-
 <a name="namespacesdownloadandoutlinkfunctionsgetlinktrackingtimermd"></a>
 
-
-***
-
+---
 
 ## getLinkTrackingTimer()
 
@@ -1285,12 +1108,9 @@ Returns lock/wait time after a request set by setLinkTrackingTimer
 
 `Promise`\<`number`\>
 
-
 <a name="namespacesdownloadandoutlinkfunctionsremovedownloadextensionsmd"></a>
 
-
-***
-
+---
 
 ## removeDownloadExtensions()
 
@@ -1306,12 +1126,9 @@ Removes extensions from the download extensions list
 
 `void`
 
-
 <a name="namespacesdownloadandoutlinkfunctionssetdownloadclassesmd"></a>
 
-
-***
-
+---
 
 ## setDownloadClasses()
 
@@ -1327,12 +1144,9 @@ Sets a list of class names that indicate whether a list is a download and not an
 
 `void`
 
-
 <a name="namespacesdownloadandoutlinkfunctionssetdownloadextensionsmd"></a>
 
-
-***
-
+---
 
 ## setDownloadExtensions()
 
@@ -1348,12 +1162,9 @@ Overwrites the list of file extensions indicating that a link is a download
 
 `void`
 
-
 <a name="namespacesdownloadandoutlinkfunctionssetignoreclassesmd"></a>
 
-
-***
-
+---
 
 ## setIgnoreClasses()
 
@@ -1369,12 +1180,9 @@ Set a list of class names that indicate a link should not be tracked
 
 `void`
 
-
 <a name="namespacesdownloadandoutlinkfunctionssetlinkclassesmd"></a>
 
-
-***
-
+---
 
 ## setLinkClasses()
 
@@ -1390,12 +1198,9 @@ Sets a list of class names that indicate whether a link is an outlink and not do
 
 `void`
 
-
 <a name="namespacesdownloadandoutlinkfunctionssetlinktrackingtimermd"></a>
 
-
-***
-
+---
 
 ## setLinkTrackingTimer()
 
@@ -1415,12 +1220,9 @@ reach the Collecting & Processing Pipeline
 
 `void`
 
-
 <a name="namespacesdownloadandoutlinkfunctionstracklinkmd"></a>
 
-
-***
-
+---
 
 ## trackLink()
 
@@ -1442,26 +1244,18 @@ Manually tracks outlink or download event with provided values
 
 `void`
 
-
 <a name="namespaceserrortrackingreadmemd"></a>
 
-
-***
-
+---
 
 ## ErrorTracking
-
-
 
 - [enableJSErrorTracking](#namespaceserrortrackingfunctionsenablejserrortrackingmd)
 - [trackError](#namespaceserrortrackingfunctionstrackerrormd)
 
-
 <a name="namespaceserrortrackingfunctionsenablejserrortrackingmd"></a>
 
-
-***
-
+---
 
 ## enableJSErrorTracking()
 
@@ -1479,12 +1273,9 @@ track only unique errors
 
 `void`
 
-
 <a name="namespaceserrortrackingfunctionstrackerrormd"></a>
 
-
-***
-
+---
 
 ## trackError()
 
@@ -1502,25 +1293,17 @@ Such error request will still follow rules set for tracker, so it will be sent o
 
 `void`
 
-
 <a name="namespacesgoalconversionsreadmemd"></a>
 
-
-***
-
+---
 
 ## GoalConversions
 
-
-
 - [trackGoal](#namespacesgoalconversionsfunctionstrackgoalmd)
-
 
 <a name="namespacesgoalconversionsfunctionstrackgoalmd"></a>
 
-
-***
-
+---
 
 ## trackGoal()
 
@@ -1540,26 +1323,18 @@ Tracks manual goal conversion
 
 `void`
 
-
 <a name="namespacesheartbeatreadmemd"></a>
 
-
-***
-
+---
 
 ## Heartbeat
-
-
 
 - [disableHeartBeatTimer](#namespacesheartbeatfunctionsdisableheartbeattimermd)
 - [enableHeartBeatTimer](#namespacesheartbeatfunctionsenableheartbeattimermd)
 
-
 <a name="namespacesheartbeatfunctionsdisableheartbeattimermd"></a>
 
-
-***
-
+---
 
 ## disableHeartBeatTimer()
 
@@ -1571,12 +1346,9 @@ Disables sending heartbeats if they were previously enabled by "enableHeartBeatT
 
 `void`
 
-
 <a name="namespacesheartbeatfunctionsenableheartbeattimermd"></a>
 
-
-***
-
+---
 
 ## enableHeartBeatTimer()
 
@@ -1592,25 +1364,17 @@ When a visitor is not producing any events (e.g. because they are reading an art
 
 `void`
 
-
 <a name="namespacespageviewsreadmemd"></a>
 
-
-***
-
+---
 
 ## PageViews
 
-
-
 - [trackPageView](#namespacespageviewsfunctionstrackpageviewmd)
-
 
 <a name="namespacespageviewsfunctionstrackpageviewmd"></a>
 
-
-***
-
+---
 
 ## trackPageView()
 
@@ -1626,25 +1390,17 @@ Tracks a visit on the page that the function was run on
 
 `void`
 
-
 <a name="namespacessitesearchreadmemd"></a>
 
-
-***
-
+---
 
 ## SiteSearch
 
-
-
 - [trackSiteSearch](#namespacessitesearchfunctionstracksitesearchmd)
-
 
 <a name="namespacessitesearchfunctionstracksitesearchmd"></a>
 
-
-***
-
+---
 
 ## trackSiteSearch()
 
@@ -1666,16 +1422,11 @@ Tracks search requests on a website
 
 `void`
 
-
 <a name="namespacesusermanagementreadmemd"></a>
 
-
-***
-
+---
 
 ## UserManagement
-
-
 
 - [deanonymizeUser](#namespacesusermanagementfunctionsdeanonymizeusermd)
 - [getUserId](#namespacesusermanagementfunctionsgetuseridmd)
@@ -1685,12 +1436,9 @@ Tracks search requests on a website
 - [setUserId](#namespacesusermanagementfunctionssetuseridmd)
 - [setUserIsAnonymous](#namespacesusermanagementfunctionssetuserisanonymousmd)
 
-
 <a name="namespacesusermanagementfunctionsdeanonymizeusermd"></a>
 
-
-***
-
+---
 
 ## deanonymizeUser()
 
@@ -1702,12 +1450,9 @@ Disables anonymous tracking and sends deanonymization event to the Tracker. Reco
 
 `void`
 
-
 <a name="namespacesusermanagementfunctionsgetuseridmd"></a>
 
-
-***
-
+---
 
 ## getUserId()
 
@@ -1719,12 +1464,9 @@ The function that will return user ID
 
 `Promise`\<`string`\>
 
-
 <a name="namespacesusermanagementfunctionsgetvisitoridmd"></a>
 
-
-***
-
+---
 
 ## getVisitorId()
 
@@ -1736,12 +1478,9 @@ Returns 16-character hex ID of the visitor
 
 `Promise`\<`string`\>
 
-
 <a name="namespacesusermanagementfunctionsgetvisitorinfomd"></a>
 
-
-***
-
+---
 
 ## getVisitorInfo()
 
@@ -1753,12 +1492,9 @@ Returns visitor information in an array
 
 `Promise`\<[`VisitorInfo`](#type-aliasesvisitorinfomd)\>
 
-
 <a name="namespacesusermanagementfunctionsresetuseridmd"></a>
 
-
-***
-
+---
 
 ## resetUserId()
 
@@ -1770,12 +1506,9 @@ Clears previously set userID, e.g. when visitor logs out
 
 `void`
 
-
 <a name="namespacesusermanagementfunctionssetuseridmd"></a>
 
-
-***
-
+---
 
 ## setUserId()
 
@@ -1793,12 +1526,9 @@ reports through it or create Multi attribution reports using User ID
 
 `void`
 
-
 <a name="namespacesusermanagementfunctionssetuserisanonymousmd"></a>
 
-
-***
-
+---
 
 ## setUserIsAnonymous()
 
@@ -1814,16 +1544,11 @@ Enables or disables anonymous tracking (anonymous = without consent). The next e
 
 `void`
 
-
 <a name="namespacesecommercereadmemd"></a>
 
-
-***
-
+---
 
 ## eCommerce
-
-
 
 - [addEcommerceItem](#namespacesecommercefunctionsaddecommerceitemmd)
 - [clearEcommerceCart](#namespacesecommercefunctionsclearecommercecartmd)
@@ -1838,12 +1563,9 @@ Enables or disables anonymous tracking (anonymous = without consent). The next e
 - [trackEcommerceCartUpdate](#namespacesecommercefunctionstrackecommercecartupdatemd)
 - [trackEcommerceOrder](#namespacesecommercefunctionstrackecommerceordermd)
 
-
 <a name="namespacesecommercefunctionsaddecommerceitemmd"></a>
 
-
-***
-
+---
 
 ## ~~addEcommerceItem()~~
 
@@ -1869,12 +1591,9 @@ Enables or disables anonymous tracking (anonymous = without consent). The next e
 
 Please use the ecommerceAddToCart instead.
 
-
 <a name="namespacesecommercefunctionsclearecommercecartmd"></a>
 
-
-***
-
+---
 
 ## ~~clearEcommerceCart()~~
 
@@ -1886,12 +1605,9 @@ Please use the ecommerceAddToCart instead.
 
 ### Deprecated
 
-
 <a name="namespacesecommercefunctionsecommerceaddtocartmd"></a>
 
-
-***
-
+---
 
 ## ecommerceAddToCart()
 
@@ -1907,12 +1623,9 @@ Tracks action of adding products to a cart
 
 `void`
 
-
 <a name="namespacesecommercefunctionsecommercecartupdatemd"></a>
 
-
-***
-
+---
 
 ## ecommerceCartUpdate()
 
@@ -1930,12 +1643,9 @@ Tracks current state of a cart
 
 `void`
 
-
 <a name="namespacesecommercefunctionsecommerceordermd"></a>
 
-
-***
-
+---
 
 ## ecommerceOrder()
 
@@ -1953,12 +1663,9 @@ Tracks conversion, including products and payment details
 
 `void`
 
-
 <a name="namespacesecommercefunctionsecommerceproductdetailviewmd"></a>
 
-
-***
-
+---
 
 ## ecommerceProductDetailView()
 
@@ -1974,12 +1681,9 @@ Tracks action of viewing product page
 
 `void`
 
-
 <a name="namespacesecommercefunctionsecommerceremovefromcartmd"></a>
 
-
-***
-
+---
 
 ## ecommerceRemoveFromCart()
 
@@ -1995,12 +1699,9 @@ Tracks action of removing a products from a cart
 
 `void`
 
-
 <a name="namespacesecommercefunctionsgetecommerceitemsmd"></a>
 
-
-***
-
+---
 
 ## ~~getEcommerceItems()~~
 
@@ -2012,12 +1713,9 @@ Tracks action of removing a products from a cart
 
 ### Deprecated
 
-
 <a name="namespacesecommercefunctionsremoveecommerceitemmd"></a>
 
-
-***
-
+---
 
 ## ~~removeEcommerceItem()~~
 
@@ -2035,12 +1733,9 @@ Tracks action of removing a products from a cart
 
 Please use the ecommerceRemoveFromCart instead.
 
-
 <a name="namespacesecommercefunctionssetecommerceviewmd"></a>
 
-
-***
-
+---
 
 ## ~~setEcommerceView()~~
 
@@ -2062,12 +1757,9 @@ Please use the ecommerceRemoveFromCart instead.
 
 ### Deprecated
 
-
 <a name="namespacesecommercefunctionstrackecommercecartupdatemd"></a>
 
-
-***
-
+---
 
 ## ~~trackEcommerceCartUpdate()~~
 
@@ -2085,12 +1777,9 @@ Please use the ecommerceRemoveFromCart instead.
 
 Please use the ecommerceCartUpdate instead.
 
-
 <a name="namespacesecommercefunctionstrackecommerceordermd"></a>
 
-
-***
-
+---
 
 ## ~~trackEcommerceOrder()~~
 
@@ -2118,23 +1807,17 @@ Please use the ecommerceCartUpdate instead.
 
 Please use the ecommerceOrder instead.
 
-
 <a name="type-aliasesdimensionsmd"></a>
 
-
-***
-
+---
 
 ## Type Alias: Dimensions
 
 > **Dimensions**: `Record`\<\`dimension$\{number\}\`, `string`\>
 
-
 <a name="type-aliasesinitoptionsmd"></a>
 
-
-***
-
+---
 
 ## Type Alias: InitOptions
 
@@ -2152,12 +1835,9 @@ Defaults to 'dataLayer'
 
 > `optional` **nonce**: `string`
 
-
 <a name="type-aliasespaymentinformationmd"></a>
 
-
-***
-
+---
 
 ## Type Alias: PaymentInformation
 
@@ -2189,12 +1869,9 @@ Defaults to 'dataLayer'
 
 > `optional` **tax**: `number` \| `string`
 
-
 <a name="type-aliasesproductmd"></a>
 
-
-***
-
+---
 
 ## Type Alias: Product
 
@@ -2234,23 +1911,17 @@ Defaults to 'dataLayer'
 
 > `optional` **variant**: `string`
 
-
 <a name="type-aliasesvisitorinfomd"></a>
 
-
-***
-
+---
 
 ## Type Alias: VisitorInfo
 
 > **VisitorInfo**: [`"0"` \| `"1"`, `string`, `number`, `string` \| `number`, `number`, `number` \| `""`, `number` \| `""`]
 
-
 <a name="variablesdefaultmd"></a>
 
-
-***
-
+---
 
 ## Variable: default
 
@@ -2260,8 +1931,8 @@ Defaults to 'dataLayer'
 
 #### getInitScript
 
-> **getInitScript**: *typeof* `PiwikPro.getInitScript`
+> **getInitScript**: _typeof_ `PiwikPro.getInitScript`
 
 #### initialize
 
-> **initialize**: *typeof* `PiwikPro.init`
+> **initialize**: _typeof_ `PiwikPro.init`
