@@ -7,7 +7,7 @@ import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-e-commerce',
   templateUrl: './e-commerce.component.html',
-  styleUrls: ['./e-commerce.component.scss']
+  styleUrls: ['./e-commerce.component.scss'],
 })
 export class ECommerceComponent implements OnInit {
   public productList: Product[];
@@ -52,17 +52,17 @@ export class ECommerceComponent implements OnInit {
   }
   addCar() {
     this.productList.push({
-        sku: 'sku-2',
-        name: 'Product 2',
-        category: ['product-category', 'product-category-2'],
-        brand: 'Brand 2',
-        variant: 'Variant 2',
-        price: 19.98,
-        customDimensions: {
-          1: 'value1',
-          2: 'value2',
-        },
-      });
+      sku: 'sku-2',
+      name: 'Product 2',
+      category: ['product-category', 'product-category-2'],
+      brand: 'Brand 2',
+      variant: 'Variant 2',
+      price: 19.98,
+      customDimensions: {
+        1: 'value1',
+        2: 'value2',
+      },
+    });
     this.eCommerceService.ecommerceAddToCart([
       {
         sku: 'sku-2',
@@ -75,7 +75,7 @@ export class ECommerceComponent implements OnInit {
           1: 'value1',
           2: 'value2',
         },
-      }
+      },
     ]);
   }
   addFood() {
@@ -103,7 +103,7 @@ export class ECommerceComponent implements OnInit {
           1: 'value1',
           2: 'value2',
         },
-      }
+      },
     ]);
   }
 
@@ -114,11 +114,14 @@ export class ECommerceComponent implements OnInit {
     const tax = 0.12;
     const shipping = 10;
     const discount = 5;
-    const subTotal = this.productList.reduce((total, product) => total + (product.price ?? 0), 0)
+    const subTotal = this.productList.reduce(
+      (total, product) => total + (product.price || 0),
+      0,
+    );
 
     this.eCommerceService.ecommerceOrder(this.productList, {
       orderId: 'order-1',
-      grandTotal: (subTotal * tax) + shipping - discount,
+      grandTotal: subTotal * tax + shipping - discount,
       subTotal,
       tax,
       shipping,
@@ -126,7 +129,5 @@ export class ECommerceComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

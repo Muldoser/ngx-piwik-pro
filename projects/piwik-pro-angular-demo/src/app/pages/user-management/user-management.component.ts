@@ -5,7 +5,7 @@ import { UserManagementService } from '@piwik-pro/ngx-piwik-pro/src/lib/services
 @Component({
   selector: 'app-user-management',
   templateUrl: './user-management.component.html',
-  styleUrls: ['./user-management.component.scss']
+  styleUrls: ['./user-management.component.scss'],
 })
 export class UserManagementComponent implements OnInit {
   public userData: any;
@@ -23,19 +23,19 @@ export class UserManagementComponent implements OnInit {
 
   ngOnInit(): void {
     setTimeout(() => {
-      const userId = this.userService.getVisitorInfo().then((value) => {
-
-        this.userData = {
-          newVisitor: value[0],
-          visitorId: value[1],
-          firstVisit: value[2],
-          prevVisit: value[3],
-          currentVisit: value[4],
-          lastVisit: value[5],
-          lastECommerce: value[6]
-        };
-      })
-    }, 500)
+      const userId = this.userService
+        .getVisitorInfo()
+        .then((value: Array<any>) => {
+          this.userData = {
+            newVisitor: value[0],
+            visitorId: value[1],
+            firstVisit: value[2],
+            prevVisit: value[3],
+            currentVisit: value[4],
+            lastVisit: value[5],
+            lastECommerce: value[6],
+          };
+        });
+    }, 500);
   }
-
 }

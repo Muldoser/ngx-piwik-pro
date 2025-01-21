@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/PiwikPRO/ngx-piwik-pro#readme",
   "dependencies": {
-    "@piwikpro/tracking-base-library": "^1.3.0"
+    "@piwikpro/tracking-base-library": "github:Muldoser/tracking-base-library"
   }
 }
